@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName '1.0'
+
+        applicationId 'org.onepf.store'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+	compile 'org.onepf:openiab:0.9.7.2'
+}

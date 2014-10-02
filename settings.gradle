@@ -1,0 +1,3 @@
+include ':Local Store Sample'
+
+project(':Local Store Sample').projectDir = file('local_store')
